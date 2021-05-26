@@ -7,12 +7,13 @@ import random
 # code
 
 print("Rock, Paper, Scissors, Shoot!")
+print("WELCOME 'PLAYER ONE' TO MY ROCK, PAPER, SCISSORS GAME!")
 
 # take user input 
 
-user_choice = input("Please choose one of: 'rock', 'paper', 'scissors'")
+user_choice = input("PLEASE CHOOSE ONE OF: 'rock', 'paper', 'scissors'")
 
-print("USER CHOICE:", user_choice)
+print("YOU CHOSE:", user_choice)
 
 # validate user input, such that the program only continues if the user input matches a list of predefined values
 # ... otherwise we will stop the program before it tries to do anything else
@@ -30,7 +31,12 @@ else:
 
 computer_choice = random.choice(allowed_inputs)
 
-print("COMPUTER CHOSE:", computer_choice)
+print("THE COMPUTER CHOSE:", computer_choice)
+
+# determine the winner
+
+
 
 # end 
 print("THIS IS THE NED OF OUR GAME. PLEASE PLAY AGAIN")
+
