@@ -35,8 +35,28 @@ print("THE COMPUTER CHOSE:", computer_choice)
 
 # determine the winner
 
-
+if user_choice == "rock":
+    if computer_choice == "rock":
+        print("IT'S A TIE")
+    elif computer_choice == "paper":
+        print("OH, THE COMPUTER WON...")
+    elif computer_choice == "scissors":
+        print("YOU WON! CONGRATS!")
+elif user_choice == "paper":
+    if computer_choice == "rock":
+        print("YOU WON! CONGRATS!")
+    elif computer_choice == "paper":
+        print("IT'S A TIE")
+    elif computer_choice == "scissors":
+        print("OH, THE COMPUTER WON...")
+elif user_choice == "scissors":
+    if computer_choice == "rock":
+        print("OH, THE COMPUTER WON...")
+    elif computer_choice == "paper":
+        print("YOU WON! CONGRATS!")
+    elif computer_choice == "scissors":
+        print("IT'S A TIE")
 
 # end 
-print("THIS IS THE NED OF OUR GAME. PLEASE PLAY AGAIN")
+print("THIS IS THE END OF OUR GAME. PLEASE PLAY AGAIN")
 
