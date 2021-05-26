@@ -1,5 +1,11 @@
 # game.py
 
+# import random 
+
+import random 
+
+# code
+
 print("Rock, Paper, Scissors, Shoot!")
 
 # take user input 
@@ -15,14 +21,16 @@ print("USER CHOICE:", user_choice)
 allowed_inputs = ["rock","paper","scissors"]
 
 if user_choice in allowed_inputs:
-    print ("Input Validated")
+    print ("USER INPUT VALIDATED")
 else:
-    print("Invalid input, please try again! Allowed inputs are 'rock','paper',and 'scissors'")
+    print("INVALID INPUT, PLEASE PLAY AGAIN. PERMITTED INPUTS ARE: 'rock','paper', OR 'scissors'")
     exit()
 
 # simulate a computer selection 
 
+computer_choice = random.choice(allowed_inputs)
 
+print("COMPUTER CHOSE:", computer_choice)
 
 # end 
 print("THIS IS THE NED OF OUR GAME. PLEASE PLAY AGAIN")
