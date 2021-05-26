@@ -11,7 +11,7 @@ print("WELCOME 'PLAYER ONE' TO MY ROCK, PAPER, SCISSORS GAME!")
 
 # take user input 
 
-user_choice = input("PLEASE CHOOSE ONE OF: 'rock', 'paper', 'scissors'")
+user_choice = input("PLEASE CHOOSE ONE OF: 'rock', 'paper', 'scissors' ")
 
 print("YOU CHOSE:", user_choice)
 
