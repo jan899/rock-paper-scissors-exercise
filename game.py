@@ -2,12 +2,22 @@
 
 # import random 
 
-import random 
+import random
 
-# code
+# import dot-env and load the user name from the .env file 
+
+import os
+from dotenv import load_dotenv 
+
+dontenv.load_dotenv()
+
+USER_NAME = os.getenv("PLAYER_NAME", default="Player One")
+
+# strings to welcome the user to the game
 
 print("Rock, Paper, Scissors, Shoot!")
-print("WELCOME 'PLAYER ONE' TO MY ROCK, PAPER, SCISSORS GAME!")
+string_in_string = "WELCOME {} TO MY ROCK, PAPER, SCISSORS GAME!".format(USER_NAME)
+print(string_in_string)
 
 # take user input 
 

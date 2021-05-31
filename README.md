@@ -1,33 +1,53 @@
 # rock-paper-scissors-exercise
 
-Repo Setup
-    Use the GitHub online interface to create a new remote project repository called something like "rock-paper-scissors-exercise". When prompted by the GitHub online interface, let's get in the habit of adding a "README.md" file and a Python-flavored ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub at an address like https://github.com/YOUR_USERNAME/rock-paper-scissors-exercise.
+## Repo Setup
 
-    After creating the remote repo, use GitHub Desktop software or the command-line to download or "clone" it onto your computer. Choose a familiar download location like the Desktop.
+Use the GitHub online interface to create a new remote project repository called something like "rock-paper-scissors-exercise". When prompted by the GitHub online interface, add a "README.md" file and a Python-flavored ".gitignore" file during the repo creation process.
 
-    After cloning the repo, navigate there from the command-line:
+After creating the remote repo, use GitHub Desktop software or the command-line to download or "clone" it onto your computer. Choose a familiar download location like the Desktop.
 
-        cd ~/Desktop/rock-paper-scissors-exercise
+After cloning the repo, navigate there from the command-line:
 
-    Use your text editor or the command-line to create a file in that repo called "game.py", and then place the following contents inside:
+'''
+#code block 
+cd ~/Desktop/rock-paper-scissors-exercise'
+'''
 
-        # game.py
+## Environment Setup
 
-        print("Rock, Paper, Scissors, Shoot!")
+Create and activate a new project-specific Anaconda virtual environment:
 
-    Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
+''' 
+#code block
+conda create -n my-game-env python=3.8 # (first time only)
+conda activate my-game-env
+'''
+        
+## ENV Setup
 
-Environment Setup
+After activating the virtual environment, install package dependencies (see the "requirements.txt" file):
 
-    FYI: Only because we're going to be working with environment variables and requiring a third-party package called "python-dotenv" to read them from the ".env" file (see details below), we'll want to use a new project-specific Python environment within which to install any required packages. Otherwise we could do this exercise in the "base" environment.
+'''
+#code block
+pip install -r requirements.txt
+'''
 
-    Create and activate a new project-specific Anaconda virtual environment:
+NOTE: if this command throws an error like "Could not open requirements file: [Errno 2] No such file or directory", make sure you are running it from the repository's root directory, where the requirements.txt file exists (see the initial cd step above)
 
-        conda create -n my-game-env python=3.8 # (first time only)
-        conda activate my-game-env
+## Setup
 
-    From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
+In in the root directory of your local repository, (if it does not already exist) create a new file called ".env", and update the contents of the ".env" file to specify your desired username:
 
-        python game.py
+'''
+#code block
+USER_NAME="Jon Snow"
+'''
 
-    If you see the "Rock, Paper, Scissors, Shoot!" message, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
+## Run the game
+
+Now you're all set to play rock, paper, scissors! Run the game by executing the command
+
+'''
+#code block
+python game.py
+'''
