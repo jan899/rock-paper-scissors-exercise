@@ -9,7 +9,7 @@ import random
 import os
 from dotenv import load_dotenv 
 
-dontenv.load_dotenv()
+dotenv.load_dotenv()
 
 USER_NAME = os.getenv("PLAYER_NAME", default="Player One")
 
